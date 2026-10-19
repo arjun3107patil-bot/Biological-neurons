@@ -60,8 +60,8 @@ class neuron:
         return self.v,self.n,self.m,self.h
 
 if __name__ == "__main__":
-    dt = 0.01
-    t_max = 50
+    dt = 0.005
+    t_max = 70
     time = np.arange(0,t_max, dt)
 
     neuron = neuron(initial_voltage=-65.0)
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     v_hist, n_hist, m_hist, h_hist = [],[],[],[]
 
     for t in time :
-            I_ext = 10.0 if 10.0 <= t <= 30.0 else 0.0 # add current from 10ms to 30 ms
+            I_ext = 10.0 if 10.0 <= t <= 50.0 else 0.0 # add current from 10ms to 30 ms
 
 
             v,n,m,h = neuron.step(I_ext , dt)
