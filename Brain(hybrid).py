@@ -148,7 +148,7 @@ for epoch in range(1,401):
     if epoch%40 == 0:
         print(f"Epoch {epoch:2d}, target sum = {target_total_sum:.2f}, output = {actual_output:.2f}, error = {error:.2f}")
 
-external_stimulus = int(input("enter some shi number(integar)"))
+external_stimulus = int(input("enter some number(integer)"))
 
 for active_count in [150, 300, 600, 900]:
     summing_target_neuron.potential = summing_target_neuron.base
