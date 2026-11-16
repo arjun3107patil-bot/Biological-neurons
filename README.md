@@ -4,6 +4,11 @@
 An implementation of the classic **Hodgkin-Huxley (1952) model** simulating action potential generation in a biological neuron using Python and NumPy.
 
 ---
+## Scientific theory
+The Hodgkin-Huxely model is a mathematical model for action-potential neurons:
+**The neuron** A neuron has a lipid bilayer covering it, which seperates the ions inside and outside the neuron
+**The ions** Positive Na ions exist in high concentration outside the neuron whereas Positive K ions exist in high concentration inside the neuron(both do exist inside and outside only the concentration varies)
+**mechanism of discharge** There are ion channels that exist on the bilayer that are voltage dependant that allow the flow of ions. Both the Na channels and K channels function differently.There are 2 forces acting on the ions(electric force and force via diffusion) which depend on current charge stored therefore it is easier to represent this as a differential equation than absolute algebra.Whichever prevails determines the direction of flow of ions determining the firing of neurons.
 
 ## Overview
 
